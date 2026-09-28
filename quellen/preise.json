@@ -1,0 +1,140 @@
+{
+ "stand": "September 2026",
+ "kurs": {
+  "eur_mad": 10.9,
+  "hinweis": "Mittelkurs laut Wise/Exchange-Rates.org, Ende September 2026: ca. 10,86–10,97 DH pro Euro. Wechselstuben und Automaten geben etwas weniger – bitte vor Ort prüfen. Faustregel: 10 DH ≈ 1 €."
+ },
+ "handeln": [
+  "Handeln gehört dazu und ist ein Gespräch, kein Kampf: Lächeln, Zeit nehmen, gern auch ein angebotenes Glas Tee annehmen.",
+  "Frag erst nach dem Preis, wenn du ernsthaft interessiert bist. Nenne dann ein Gegenangebot bei etwa 40–50 % des ersten Preises und tastet euch langsam aufeinander zu.",
+  "Ein freundliches „La, shukran“ (Nein, danke) und ruhiges Weitergehen ist erlaubt. Oft kommt dann der bessere Preis.",
+  "Hat der Händler deinem Preis zugestimmt, gilt das Geschäft. Ein Rückzieher danach ist unhöflich.",
+  "Mehrere Teile beim selben Händler bringen Rabatt. Kleine Scheine und Münzen in Dirham machen das Bezahlen leichter.",
+  "Feste Preise gibt es bei Obst, Wasser, Taxameter und staatlichen Kooperativen (z. B. Ensemble Artisanal). Dort vorher schauen hilft als Preis-Kompass."
+ ],
+ "preise": [
+  {
+   "was": "Minztee im Café",
+   "spanne": "10–15 DH",
+   "hinweis": "In einfachen Cafés, z. B. in Chefchaouen oder Fès. An touristischen Plätzen und auf Dachterrassen in Marrakesch auch 20–30 DH."
+  },
+  {
+   "was": "Frischer Orangensaft am Jemaa el-Fna",
+   "spanne": "4–15 DH",
+   "hinweis": "Die Quellen sind uneinig: früher einheitlich 4 DH, neuere Berichte nennen 5–15 DH. Ein Bericht von 2026 nennt sogar 40 DH plus Aufpreis für den To-go-Becher. Preis vorher fragen, auf „100 % Orange“ ohne Wasser achten."
+  },
+  {
+   "was": "Einfaches Tajine-Essen",
+   "spanne": "30–150 DH",
+   "hinweis": "In Imbissen oder einfachen Lokalen ab ca. 30 DH, in normalen Restaurants 60–150 DH. Touristenlagen verlangen deutlich mehr. An den Garküchen am Jemaa el-Fna gibt es Gerichte für 30–50 DH."
+  },
+  {
+   "was": "Flasche Wasser (1,5 l)",
+   "spanne": "5–10 DH",
+   "hinweis": "Im Laden oder Supermarkt meist 6 DH. Im Hotel oder im Touristen-Café 20–40 DH."
+  },
+  {
+   "was": "Babouches (Lederpantoffeln)",
+   "spanne": "80–150 DH",
+   "hinweis": "Schlichtes Leder. Bestickte oder aufwendige Paare 200–350 DH, Premium bis 500 DH. Auf echtes Leder und genähte, nicht geklebte Sohle achten."
+  },
+  {
+   "was": "Ledertasche (klein)",
+   "spanne": "200–400 DH",
+   "hinweis": "Große Taschen 400–800 DH. Gute Auswahl im Souk Cherratine in Marrakesch. Nähte und Innenfutter prüfen, echtes Leder riecht nach Leder, nicht nach Chemie."
+  },
+  {
+   "was": "Leder-Pouf",
+   "spanne": "400–800 DH",
+   "hinweis": "Preis für die ungefüllte Hülle. Sie reist flach im Koffer mit und wird zu Hause gestopft."
+  },
+  {
+   "was": "Arganöl (100 ml)",
+   "spanne": "80–140 DH",
+   "hinweis": "Speiseöl ca. 80–120 DH: aus gerösteten Kernen, dunkler, nussiger Duft. Kosmetiköl ca. 100–140 DH: hell, fast geruchlos. Oft wird gestrecktes Öl verkauft, eine Quelle hält sehr billiges Öl grundsätzlich für verdächtig (Richtwert dort: nicht unter 150 DH für 30 ml). Besser bei Frauenkooperativen kaufen, mit Zertifikat. Ranzig oder muffig riechendes Öl meiden."
+  },
+  {
+   "was": "Gewürze (pro 100 g)",
+   "spanne": "5–20 DH",
+   "hinweis": "Kreuzkümmel, Paprika, Kurkuma usw. Die Mischung Ras el-Hanout kostet 30–60 DH pro 100 g. Im Touristen-Souk ist es oft teurer."
+  },
+  {
+   "was": "Safran (pro Gramm)",
+   "spanne": "15–70 DH",
+   "hinweis": "Die Quellen sind uneinig: 15–40 DH, an Touristenständen 40–70 DH. Echter Safran färbt Wasser langsam goldgelb, die Fäden bleiben dabei rot. Sehr billiger „Safran“ ist oft gefälscht."
+  },
+  {
+   "was": "Keramik: Schale oder Tajine (Fès/Safi)",
+   "spanne": "20–200 DH",
+   "hinweis": "Kleine Schalen ab 20 DH (in Werkstätten), Tajine-Töpfe ab ca. 80 DH, große Platten ab 200 DH. Meisterstücke aus Fès kosten bis 2.000 DH und mehr. Zum Kochen eine unglasierte oder lebensmittelechte Tajine nehmen, bemalte sind meist nur Deko."
+  },
+  {
+   "was": "Teppich (klein, sehr grob)",
+   "spanne": "300–1.000 DH",
+   "hinweis": "Sehr grobe Schätzung, die Quellen gehen weit auseinander: ein kleiner Kelim ab ca. 300 DH, ein kleiner Knüpfteppich eher 750–1.000 DH. Mittlere Größen kosten 3.500–6.000 DH, alte Stücke deutlich mehr. Nicht unter Druck kaufen, auch wenn Tee serviert wird."
+  },
+  {
+   "was": "Laterne/Lampe (Metall)",
+   "spanne": "100–600 DH",
+   "hinweis": "Mittelgroße Laternen aus gelochtem Messing. Kleine Hängelampen ab ca. 30 DH, große Stücke ab 800 DH. Messing ist schwerer und wertiger als lackiertes Blech."
+  },
+  {
+   "was": "Schal/Tuch",
+   "spanne": "40–100 DH",
+   "hinweis": "Baumwolle. Einfache Berber-Tücher gibt es schon ab 10–40 DH, Seide ca. 70 DH und mehr. „Kaktusseide“ ist oft falsch deklariert, viele Tücher kommen aus Indien. Als Ziel etwa 40 % des ersten Preises ansetzen."
+  },
+  {
+   "was": "Petit Taxi in der Stadt (Taxameter)",
+   "spanne": "7–30 DH",
+   "hinweis": "Mindestpreis 7 DH am Tag und 10 DH nachts. Normale Stadtfahrten kosten 20–30 DH. Nach 20 Uhr gilt meist ein Aufschlag von 50 % (eine Quelle sagt, in Marrakesch gebe es keinen). Auf „Compteur, s'il vous plaît“ bestehen."
+  },
+  {
+   "was": "Hammam (einheimisch)",
+   "spanne": "10–80 DH",
+   "hinweis": "Die Quellen sind uneinig: Eintritt 10–40 DH, anderswo 40–80 DH. Peeling und Einseifen kosten je ca. 20 DH extra. Seife, Handschuh und Handtuch selbst mitbringen."
+  },
+  {
+   "was": "Hammam (Spa/Riad)",
+   "spanne": "150–990 DH",
+   "hinweis": "Einfachere Touristen-Hammams ab ca. 150–200 DH, Pakete in Riads der Mittelklasse 290–990 DH. Palast-Spas wie La Mamounia kosten 1.300 DH und mehr."
+  },
+  {
+   "was": "Offizieller Guide (halber Tag)",
+   "spanne": "150–400 DH",
+   "hinweis": "Pro Gruppe, nicht pro Person. In Fès meist 200–300 DH. Lizenzierte Guides tragen einen Ausweis. Über das Riad oder das Touristenbüro buchen und Shopping-Stopps vorher ausschließen."
+  },
+  {
+   "was": "Parkwächter (Gardien)",
+   "spanne": "2–10 DH",
+   "hinweis": "In normalen Straßen am Tag ca. 2 DH, über Nacht ca. 3 DH, in Touristenlagen 5–10 DH. Wird beim Wegfahren gezahlt, immer in Dirham. Offizielle Parkplätze haben oft feste Tarife."
+  }
+ ],
+ "quellen": [
+  "https://wise.com/us/currency-converter/eur-to-mad-rate/history",
+  "https://www.exchange-rates.org/exchange-rate-history/eur-mad-2026",
+  "https://continenthop.com/blog/marrakech-souk-guide/",
+  "https://marrakech.me/shopping-guide-souks/",
+  "https://www.marrakechtourguide.com/blog/marrakech-souk-price-guide/",
+  "https://hipmarrakech.com/marrakech-guide/orange-juice-jemaa-al-fnaa/",
+  "https://www.marrakech-desert-trips.com/explore-marrakech-souks/",
+  "https://heerby.ma/en/blog/food-cost-morocco-price-guide",
+  "https://www.serenitymoroccotours.com/community/answers/is-bottled-water-easy-to-find-in-morocco-what-brands",
+  "https://www.tripadvisor.com/ShowTopic-g293734-i9196-k11058797-30_DH_for_mint_tea-Marrakech_Marrakech_Safi.html",
+  "https://citytoursmorocco.com/morocco-argan-oil",
+  "https://theculturetrip.com/africa/morocco/articles/what-you-need-to-know-when-buying-argan-oil-in-morocco",
+  "https://citytoursmorocco.com/morocco-spice-guide",
+  "https://theunknownenthusiast.com/souvenirs-from-morocco/",
+  "https://citytoursmorocco.com/morocco-pottery-guide",
+  "https://marocmama.com/7-tips-for-buying-a-rug-in-marrakech/",
+  "https://www.desertmoroccoadventure.com/how-much-rugs-cost-in-morocco/",
+  "https://getmoroccovacation.com/moroccan-scarf-buying-guide/",
+  "https://www.lonelyplanet.com/articles/how-to-haggle-in-marrakesh-morocco",
+  "https://moroccantraveltrips.com/taxi-tips-in-marrakech/",
+  "https://www.welcomepickups.com/marrakech/taxi/",
+  "https://www.marrakechprivate.com/guides/hammam-spa-prices-marrakech",
+  "https://www.travelonatimebudget.co.uk/morocco/marrakech-hammams-what-to-expect/",
+  "https://citytoursmorocco.com/fes-prices-costs-guide",
+  "https://www.morocco-guide.com/travel-tips/tipping-in-morocco/",
+  "https://moroccomama.wordpress.com/tag/parking-guardian/"
+ ]
+}

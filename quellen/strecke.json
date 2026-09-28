@@ -1,0 +1,256 @@
+[
+  {
+    "id": "strecke-info-marrakesch-fes",
+    "art": "strecke",
+    "info": true,
+    "station": "fes",
+    "name": "Fahrtag Marrakesch → Fès",
+    "ort": [32.93500, -5.66800],
+    "ortSicher": "niedrig",
+    "text": "Zwei Wege: die Autobahn über Casablanca und Rabat (rund 5,5 Std. reine Fahrzeit, mit Pausen und Stadtzufahrten eher 6,5–8 Std.) oder die grüne Bergroute über Beni Mellal, Khenifra, Azrou und Ifrane (grob 7–8 Std. reine Fahrzeit, je nach Umwegen mehr). Die Bergroute ist die schönere, aber an einem Tag nur machbar, wenn man sich auf ein, zwei Stopps beschränkt – Ouzoud und Bin el Ouidane zusammen plus Azrou und Ifrane sind zu viel.",
+    "licht": "Früh losfahren, damit die Zedernwälder um Azrou und Ifrane noch im Nachmittagslicht liegen; nach Einbruch der Dunkelheit Bergstraßen möglichst meiden.",
+    "offen": "Tankstellen auf der Autobahn regelmäßig; auf der Bergroute in Beni Mellal, Khenifra und Azrou volltanken und nie unter halb leer weiterfahren. Autobahn ist mautpflichtig (Bargeld in Dirham bereithalten).",
+    "aufwand": "Langer Fahrtag. Tempolimits: 120 km/h Autobahn, meist 100 km/h Landstraße (teils 80), 60 km/h in Orten. Pausen: Raststätten an der Autobahn; auf der Bergroute Cafés in Khenifra, Azrou oder Ifrane.",
+    "achtung": "Polizeikontrollen mit Radar an fast jeder Ortsein- und -ausfahrt – Tempolimit wirklich einhalten, Bußgelder werden vor Ort bezahlt. Führerschein, Pass und Mietwagenpapiere griffbereit haben. Nachts auf Landstraßen mit unbeleuchteten Eseln, Fußgängern und Mopeds rechnen.",
+    "highlight": false,
+    "quelle": [
+      "https://www.moroccoforyou.com/blog/driving-from-marrakech-to-fes-self-drive/",
+      "https://www.journalofnomads.com/renting-a-car-in-morocco-driving-tips/"
+    ]
+  },
+  {
+    "id": "strecke-ouzoud-wasserfaelle",
+    "art": "strecke",
+    "station": "fes",
+    "name": "Cascades d'Ouzoud",
+    "ort": [32.01500, -6.71900],
+    "ortSicher": "mittel",
+    "text": "Etappe Marrakesch → Fès, Bergroute. Rund 110 Meter fällt das Wasser in Stufen in eine rote Schlucht, darunter grüne Olivenbäume und kleine Boote. Nach Oktober führen die Fälle oft weniger Wasser als im Frühjahr.",
+    "licht": "Vormittags, wenn Sonne auf den Fällen liegt und sich im Sprühnebel manchmal ein Regenbogen zeigt; ab Mittag stehen Teile der Schlucht im Schatten.",
+    "offen": "Kein Eintritt, Parken ca. 10–20 MAD; Bootsfahrt zum Fuß der Fälle ca. 20 MAD (Angaben aus Reiseblogs, können sich ändern).",
+    "aufwand": "Umweg: Abzweig über Azilal von der N8, laut Routenführern mindestens +1 Std. Fahrt (ca. 60–80 km mehr) plus 1–2 Std. vor Ort. Vom Parkplatz Treppen und Pfade hinab in die Schlucht, bergauf zurück ca. 15–20 Min.",
+    "achtung": "Am Parkplatz warten selbsternannte Führer, die ‚Eintritt‘ verlangen oder den Weg zeigen wollen – freundlich ablehnen, der Weg ist gut zu finden. Die Affen hier nicht füttern. Stufen können nass und rutschig sein.",
+    "highlight": true,
+    "quelle": [
+      "https://www.journalofnomads.com/ouzoud-waterfalls-morocco/",
+      "https://ouzoudwaterfalls.org/hours-and-fees/"
+    ]
+  },
+  {
+    "id": "strecke-bin-el-ouidane",
+    "art": "strecke",
+    "station": "fes",
+    "name": "Stausee Bin el Ouidane",
+    "ort": [32.10000, -6.46700],
+    "ortSicher": "mittel",
+    "text": "Etappe Marrakesch → Fès, Bergroute zwischen Azilal und Beni Mellal. Ein türkisgrüner See zwischen kahlen, rötlichen Bergen, die Staumauer ist 133 Meter hoch. Man sieht ihn am besten von der Straße oberhalb der Mauer.",
+    "licht": "Früher Vormittag: Die Schlucht unter der Mauer liegt dann im Schatten, der See dahinter leuchtet.",
+    "offen": "Frei zugänglich, Aussicht von der Straße aus.",
+    "aufwand": "Liegt nur sinnvoll auf der Schleife Ouzoud → Azilal → Bin el Ouidane → Beni Mellal (R304). Ab Beni Mellal ca. 80 km / 1,5 Std. auf kurviger Straße; gegenüber der direkten N8 grob +1,5–2 Std. Mit Ouzoud zusammen an diesem Fahrtag nur mit sehr frühem Start.",
+    "achtung": "Kurvige Bergstraße ohne Leitplanken an manchen Stellen; zum Fotografieren nur an breiten Ausweichstellen halten.",
+    "highlight": false,
+    "quelle": [
+      "https://en.wikipedia.org/wiki/Bin_el_Ouidane_Dam",
+      "https://www.serenitymoroccotours.com/guide/bin-el-ouidane"
+    ]
+  },
+  {
+    "id": "strecke-cedre-gouraud",
+    "art": "strecke",
+    "station": "fes",
+    "name": "Zedernwald Cèdre Gouraud (Berberaffen)",
+    "ort": [33.40000, -5.17000],
+    "ortSicher": "niedrig",
+    "text": "Etappe Marrakesch → Fès, Bergroute zwischen Azrou und Ifrane. Alte Atlaszedern, dunkelgrün, dazwischen moosiger Boden und die Berberaffen, die oft ruhig am Wegrand sitzen. Nach dem langen Tag im Trockenen riecht es hier nach Harz und kühler Luft.",
+    "licht": "Am späten Nachmittag fällt das Licht schräg zwischen die Stämme; mittags ist es im Wald fleckig und kontrastreich.",
+    "offen": "Frei zugänglich, Parkplatz an der Straße (N8/Abzweig zwischen Azrou und Ifrane).",
+    "aufwand": "Kaum Umweg: wenige Kilometer bzw. ca. 10–15 Min. Abstecher von der Strecke Azrou–Ifrane, dann kurze Wege vom Parkplatz.",
+    "achtung": "Bitte die Affen nicht füttern – auch wenn Händler Erdnüsse verkaufen. Füttern macht sie krank und aggressiv. Taschen zu, Essen nicht offen tragen, Abstand halten.",
+    "highlight": true,
+    "quelle": [
+      "https://en.wikipedia.org/wiki/C%C3%A8dre_Gouraud_Forest",
+      "https://moroccobeautyspots.com/blog/azrou-barbary-macaques-ethical-guide"
+    ]
+  },
+  {
+    "id": "strecke-ifrane",
+    "art": "strecke",
+    "station": "fes",
+    "name": "Ifrane und der Steinlöwe",
+    "ort": [33.53000, -5.11000],
+    "ortSicher": "niedrig",
+    "text": "Etappe Marrakesch → Fès, ca. 65 km bzw. eine Stunde vor Fès. Ein seltsam ordentlicher Ort mit Spitzdächern, Parks und breiten Alleen, der eher an die Alpen erinnert. Gut für einen Kaffee und die Beine, bevor es in die Ebene von Fès hinuntergeht.",
+    "licht": "Nachmittags, wenn das Laub der Alleen im Herbst warm leuchtet; der Löwe wirkt im weichen Seitenlicht plastischer.",
+    "offen": "Stadt frei zugänglich.",
+    "aufwand": "Liegt direkt an der Strecke; Parken im Zentrum meist unkompliziert. Löwe im oberen Teil des Ortes nahe Hotels und Restaurants.",
+    "achtung": "In 1.650 m Höhe kann es im Herbst abends empfindlich kalt werden – eine Jacke im Auto lassen.",
+    "highlight": false,
+    "quelle": [
+      "https://www.morocco-guide.com/ifrane/",
+      "https://citytoursmorocco.com/ifrane-guide"
+    ]
+  },
+  {
+    "id": "strecke-dayet-aoua",
+    "art": "strecke",
+    "station": "fes",
+    "name": "Dayet Aoua",
+    "ort": [33.64900, -5.02700],
+    "ortSicher": "mittel",
+    "text": "Etappe Marrakesch → Fès, zwischen Ifrane und Fès. Ein flacher See auf 1.460 m, eingefasst von Wald – still, wenn kein Ausflugsbetrieb ist. Je nach Regenjahr führt er viel oder wenig Wasser.",
+    "licht": "Später Nachmittag und kurz vor Sonnenuntergang, wenn der See spiegelt.",
+    "offen": "Frei zugänglich.",
+    "aufwand": "Ca. 15 km von Ifrane, kleiner Abstecher von der Straße nach Fès, grob +15–20 Min.",
+    "achtung": "Wasserstand schwankt stark; in trockenen Jahren ist wenig zu sehen.",
+    "highlight": false,
+    "quelle": [
+      "https://www.morocco-guide.com/ifrane/"
+    ]
+  },
+  {
+    "id": "strecke-info-fes-chefchaouen",
+    "art": "strecke",
+    "info": true,
+    "station": "chefchaouen",
+    "name": "Fahrtag Fès → Chefchaouen",
+    "ort": [34.79700, -5.57900],
+    "ortSicher": "niedrig",
+    "text": "Direkt über Ouazzane rund 210 km und etwa 3,5 Std.: erst durch Ebene und Hügel, ab Ouazzane in die grünen Ausläufer des Rif, die letzten rund 60 km kurvig. Mit Volubilis und Moulay Idriss wird daraus ein ganzer Tag.",
+    "licht": "Am Nachmittag in Chefchaouen ankommen, dann liegt die blaue Stadt noch im Licht.",
+    "offen": "In Fès oder spätestens in Ouazzane tanken; im Rif sind Tankstellen seltener.",
+    "aufwand": "Tempolimits: meist 100 km/h Landstraße, 60 km/h in Orten, in Kurven deutlich langsamer. Pausen: Ouazzane (Café, Tankstelle) als natürliche Hälfte.",
+    "achtung": "Radar- und Polizeikontrollen an Ortseingängen. Rund um Chefchaouen bieten Männer am Straßenrand manchmal Haschisch an oder winken Autos heran – nicht anhalten, freundlich weiterfahren. In Chefchaouen nicht in die Medina fahren, sondern außerhalb auf bewachten Parkplätzen parken.",
+    "highlight": false,
+    "quelle": [
+      "https://www.kimkim.com/ab/fes-to-chefchaouen",
+      "https://www.chefchaouen-morocco.com/fes-to-chefchaouen-route-guide"
+    ]
+  },
+  {
+    "id": "strecke-volubilis",
+    "art": "strecke",
+    "station": "chefchaouen",
+    "name": "Volubilis",
+    "ort": [34.07110, -5.55390],
+    "ortSicher": "mittel",
+    "text": "Etappe Fès → Chefchaouen, Abstecher bei Meknès. Römische Ruinen auf einem offenen Hang, Säulen und Bodenmosaike, ringsum Olivenhaine und im Herbst gelbgrüne Felder. Es ist weit und ruhig hier, der Wind kommt über die Ebene.",
+    "licht": "Früher Vormittag oder später Nachmittag – mittags gibt es kaum Schatten und das Licht auf dem hellen Stein ist hart.",
+    "offen": "Täglich ca. 8:30–18:00, letzter Einlass ca. 17:30; Eintritt ca. 70 MAD (Angaben aus 2025/26, bitte vor Ort prüfen). Offizielle Guides am Eingang ca. 200–300 MAD pro Gruppe.",
+    "aufwand": "Ca. 85 km / gut 1 Std. westlich von Fès. Gegenüber der direkten Route über Ouazzane grob +1–1,5 Std. Fahrzeit (ca. 50–80 km mehr, Schätzung) plus 1,5–2 Std. Besichtigung. Parkplatz am Eingang, Gelände uneben.",
+    "achtung": "Kaum Schatten – Hut, Wasser und feste Schuhe. Am Eingang sprechen Leute als ‚Guide‘ an; nur offizielle nehmen oder allein gehen.",
+    "highlight": true,
+    "quelle": [
+      "https://www.trip.com/travel-guide/attraction/meknes/volubilis-38586632/",
+      "https://wanderingwheatleys.com/day-trip-volubilis-moulay-idriss-morocco/"
+    ]
+  },
+  {
+    "id": "strecke-moulay-idriss-terrasse",
+    "art": "strecke",
+    "station": "chefchaouen",
+    "name": "Moulay Idriss, Grande Terrasse",
+    "ort": [34.05620, -5.52200],
+    "ortSicher": "niedrig",
+    "text": "Etappe Fès → Chefchaouen, 3–4 km neben Volubilis. Die heilige Stadt liegt über zwei Hügel verteilt, weiße Würfel zwischen grünen Kuppeln; von der Terrasse sieht man bis nach Volubilis hinunter.",
+    "licht": "Am späten Nachmittag leuchten die weißen Häuser warm; morgens liegt die Stadt teils im Gegenlicht.",
+    "offen": "Stadt frei zugänglich; das Heiligtum von Moulay Idriss ist für Nicht-Muslime nicht betretbar.",
+    "aufwand": "Nur ca. 5–10 Min. Fahrt von Volubilis. Auto unten am Platz parken, dann steile Gassen und Treppen hinauf; die Terrassen sind schwer allein zu finden.",
+    "achtung": "Kinder oder junge Männer bieten sich als Wegweiser an – für ein paar Dirham in Ordnung, vorher Preis klären. Schultern und Knie bedecken, es ist ein Wallfahrtsort.",
+    "highlight": false,
+    "quelle": [
+      "https://en.wikipedia.org/wiki/Moulay_Idriss_Zerhoun",
+      "https://www.tripadvisor.com/ShowUserReviews-g293735-d4830735-r415641056-La_Grande_Terrasse-Meknes_Fez_Meknes.html"
+    ]
+  },
+  {
+    "id": "strecke-akchour-gottesbruecke",
+    "art": "strecke",
+    "station": "chefchaouen",
+    "name": "Akchour-Wasserfälle und Gottesbrücke",
+    "ort": [35.23800, -5.17300],
+    "ortSicher": "niedrig",
+    "text": "Tagesausflug ab Chefchaouen, keine Etappe. Grünes, klares Wasser in einer Kalksteinschlucht, darüber die natürliche Felsbrücke ‚Pont de Dieu‘. Ein Tag, an dem man nach dem Blau der Stadt das Grün des Rif zu Fuß erlebt.",
+    "licht": "Vormittag bis früher Nachmittag, solange die Sonne in die enge Schlucht fällt; das Wasser wirkt dann am klarsten.",
+    "offen": "Frei zugänglich; einfache Cafés am Weg (Angebot außerhalb der Saison evtl. eingeschränkt).",
+    "aufwand": "Anfahrt ab Chefchaouen ca. 45 Min. Wanderung: nur unterer Wasserfall ca. 2 Std. hin und zurück; Gottesbrücke je nach Weg ca. 45 Min.–1,5 Std. pro Richtung, bergig; beides zusammen 5–6 Std. Trittsicherheit nötig, teils Flussquerungen.",
+    "achtung": "Feste Schuhe mit gutem Profil, Steine am Wasser sind glatt. Nach Regen können Pfade und Furten schwierig werden. Genug Wasser und etwas zu essen mitnehmen.",
+    "highlight": true,
+    "quelle": [
+      "https://www.journalofnomads.com/akchour-waterfalls-chefchaouen/",
+      "https://www.world-of-waterfalls.com/waterfalls/africa-cascades-d-akchour/"
+    ]
+  },
+  {
+    "id": "strecke-info-chefchaouen-tanger",
+    "art": "strecke",
+    "info": true,
+    "station": "tanger",
+    "name": "Fahrtag 2. Nov.: Chefchaouen → Tanger",
+    "ort": [35.45000, -5.38000],
+    "ortSicher": "niedrig",
+    "text": "Über Tétouan nach Tanger, reine Fahrzeit knapp 2 Std. (ca. 110–120 km). Erst durch grüne Rif-Täler hinab nach Tétouan, dann flacher Richtung Meerenge. Zeit genug für die Medina von Tétouan; Asilah ist ein eigener Abstecher an die Atlantikküste.",
+    "licht": "Tétouan am Vormittag, Asilah – falls es passt – am späten Nachmittag zum Sonnenuntergang.",
+    "offen": "Tankstellen in Tétouan und Tanger ausreichend.",
+    "aufwand": "Tempolimits: 100 km/h Landstraße, 60 km/h in Orten, 120 km/h Autobahn (falls über Asilah). Pausen: Tétouan (Parkhäuser Feddan oder Hammadi nahe der Medina).",
+    "achtung": "Polizeikontrollen vor Tétouan und Tanger häufig. In Tanger ist der Verkehr dicht und die Medina nicht befahrbar – Unterkunft nach Parkplatz fragen.",
+    "highlight": false,
+    "quelle": [
+      "https://www.rome2rio.com/s/Chefchaouen/Tangier-Tetouan",
+      "https://www.journalofnomads.com/renting-a-car-in-morocco-driving-tips/"
+    ]
+  },
+  {
+    "id": "strecke-oued-laou-schlucht",
+    "art": "strecke",
+    "station": "tanger",
+    "name": "Schlucht des Oued Laou",
+    "ort": [35.35000, -5.12000],
+    "ortSicher": "niedrig",
+    "text": "Etappe Chefchaouen → Tanger, nur als Alternativroute. Statt direkt über die N2 nach Tétouan führt die schmale Straße P4105 hoch über dem Fluss durch eine tiefe, grüne Schlucht bis ans Mittelmeer bei Oued Laou, dann an der Küste entlang nach Tétouan.",
+    "licht": "Vormittags, wenn die Sonne in das Tal fällt; nachmittags liegen Teile der Schlucht im Schatten.",
+    "offen": "Öffentliche Straße.",
+    "aufwand": "Deutlicher Umweg: grob +1,5–2 Std. gegenüber der direkten Route (Schätzung, nicht belegt). Schmale, kurvige Bergstraße; nur bei gutem Wetter und ohne Zeitdruck.",
+    "achtung": "Stellenweise einspurig und ohne Leitplanken, nach Regen Steinschlag möglich. Nur an sicheren Ausbuchtungen halten.",
+    "highlight": false,
+    "quelle": [
+      "https://www.cyclefiesta.com/cycle-touring/morocco/chefchaouen-tetouan.htm",
+      "https://en.wikipedia.org/wiki/Oued_Laou"
+    ]
+  },
+  {
+    "id": "strecke-tetouan-medina",
+    "art": "strecke",
+    "station": "tanger",
+    "name": "Medina von Tétouan",
+    "ort": [35.57200, -5.36500],
+    "ortSicher": "mittel",
+    "text": "Etappe Chefchaouen → Tanger, liegt direkt am Weg. Die weiße, andalusisch geprägte Medina ist UNESCO-Welterbe und deutlich ruhiger als die großen Städte; Tore wie Bab Okla, grüne Holztüren, Handwerkergassen.",
+    "licht": "Vormittags zwischen etwa 10 und 12 Uhr, wenn die Läden offen sind und das Licht in die weißen Gassen fällt.",
+    "offen": "Medina frei zugänglich; Läden meist vormittags und am späten Nachmittag, freitags mittags vieles geschlossen.",
+    "aufwand": "Kein Umweg, Zeit vor Ort 2–3 Std. Parken in den Parkhäusern Feddan oder Hammadi, ca. 15 Min. zu Fuß zur Medina.",
+    "achtung": "Offline-Karte laden, die Gassen verzweigen sich. Moscheen sind für Nicht-Muslime nicht zugänglich.",
+    "highlight": true,
+    "quelle": [
+      "https://www.moroccotraveljournal.com/tetouan-morocco-travel-guide-white-dove-city-unesco-medina/",
+      "https://en.wikivoyage.org/wiki/T%C3%A9touan"
+    ]
+  },
+  {
+    "id": "strecke-asilah",
+    "art": "strecke",
+    "station": "tanger",
+    "name": "Asilah: Wandbilder und Krikia-Bastion",
+    "ort": [35.46600, -6.03700],
+    "ortSicher": "mittel",
+    "text": "Etappe Chefchaouen → Tanger, Abstecher an die Atlantikküste. Eine weiße Medina hinter alten Mauern, auf deren Wänden Künstler seit 1978 Wandbilder malen; auf der Krikia-Bastion sitzt man über dem Meer.",
+    "licht": "Später Nachmittag und Sonnenuntergang an der Krikia – das Licht kommt vom Atlantik und färbt die weißen Wände warm.",
+    "offen": "Medina frei zugänglich. Die Wandbilder werden jedes Jahr teils neu gemalt; welche gerade zu sehen sind, ist offen.",
+    "aufwand": "Ca. 45 km südlich von Tanger, über die Autobahn grob 40 Min. pro Richtung; als Abstecher etwa +1,5 Std. Fahrt plus Zeit vor Ort. Parken außerhalb der Stadtmauer.",
+    "achtung": "Auf den Bastionsmauern gibt es kaum Geländer – bei Wind vorsichtig am Rand.",
+    "highlight": false,
+    "quelle": [
+      "https://notscaredofthejetlag.com/asilah-insider-tip-atlantic-coast-morocco/",
+      "https://citytoursmorocco.com/asilah-guide"
+    ]
+  }
+]

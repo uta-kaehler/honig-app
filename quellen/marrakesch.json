@@ -1,0 +1,247 @@
+[
+  {
+    "id": "marrakesch-jemaa-el-fna",
+    "art": "sehen",
+    "station": "marrakesch",
+    "name": "Jemaa el-Fna",
+    "ort": [31.62587, -7.98913],
+    "ortSicher": "hoch",
+    "text": "Tagsüber ein weiter, fast leerer Platz mit Orangensaftständen, gegen Abend ziehen Rauch von den Garküchen und die ersten Lichter auf. Am schönsten ist es, den Wechsel einmal von oben anzusehen und danach unten mittendrin zu sein.",
+    "licht": "Zur Dämmerung (die Uhrzeit steht auf der Heute-Seite): Himmel orange hinter der Koutoubia, darunter Rauch und Lampen der Stände. Von einer der Café-Terrassen am Südrand, etwa Le Grand Balcon du Café Glacier, sieht man den ganzen Platz; dort ist ein Getränk Pflicht, und man sollte früh da sein.",
+    "offen": "Öffentlicher Platz, immer zugänglich. Die Garküchen bauen ab dem späten Nachmittag auf.",
+    "aufwand": "Vom Riad etwa 5 Minuten zu Fuß. Abends sehr voll.",
+    "achtung": "Schlangenbeschwörer, Affenhalter und Henna-Frauen verlangen Geld fürs Foto oder drücken einem ungefragt etwas in die Hand. Einfach freundlich ablehnen und Menschen nur mit Einverständnis fotografieren. Im Gedränge Handy und Geldbeutel vorne tragen.",
+    "highlight": true,
+    "quelle": [
+      "https://www.frommers.com/destinations/marrakech/nightlife/grand-balcon-du-caf-glacier/",
+      "https://frewaphoto.com/best-sunset-spot-in-marrakesh-le-grand-balcon-du-cafe-glacier/"
+    ]
+  },
+  {
+    "id": "marrakesch-koutoubia",
+    "art": "sehen",
+    "station": "marrakesch",
+    "name": "Koutoubia-Moschee und Lalla-Hasna-Park",
+    "ort": [31.62374, -7.99366],
+    "ortSicher": "hoch",
+    "text": "Das 77 Meter hohe Minarett ist der Kompass der Stadt, man sieht es fast von überall. Im Park dahinter stehen Rosen und Orangenbäume, und der Stein färbt sich am späten Nachmittag rötlich.",
+    "licht": "Später Nachmittag bis Sonnenuntergang, wenn der Turm warmes, rotes Licht bekommt. Nach Einbruch der Dunkelheit wird er angestrahlt.",
+    "offen": "Die Gärten sind frei zugänglich, ohne Eintritt.",
+    "aufwand": "Etwa 10 Minuten zu Fuß vom Riad, über den Jemaa el-Fna. Flach und einfach.",
+    "achtung": "Die Moschee selbst dürfen Nicht-Muslime nicht betreten.",
+    "highlight": false,
+    "quelle": [
+      "https://www.gpsmycity.com/attractions/koutoubia-mosque-and-minaret-19215.html",
+      "https://www.serenitymoroccotours.com/blog/koutoubia-mosque-guide"
+    ]
+  },
+  {
+    "id": "marrakesch-bahia-palast",
+    "art": "sehen",
+    "station": "marrakesch",
+    "name": "Bahia-Palast",
+    "ort": [31.62157, -7.98313],
+    "ortSicher": "mittel",
+    "text": "Ein Palast aus dem 19. Jahrhundert, eher verschachtelt als prunkvoll, mit bemalten Zedernholzdecken, Zellij-Fliesen und stillen Innenhöfen mit Bananenstauden. Man geht von Raum zu Raum und schaut vor allem nach oben.",
+    "licht": "Gleich um 9 Uhr, bevor die Gruppen kommen; die Innenhöfe sind dann noch weich ausgeleuchtet und fast leer. Die Decken fotografiert man am besten im Schatten, ohne direkte Sonne.",
+    "offen": "Täglich etwa 9–17 Uhr. Eintritt 100 MAD, nur Bargeld in Dirham (Stand laut Quellen 2025/26, bitte vor Ort prüfen).",
+    "aufwand": "Nur wenige Minuten zu Fuß vom Riad, gleiche Ecke der Medina.",
+    "achtung": "Am Eingang bieten sich oft inoffizielle Führer an; die braucht es nicht.",
+    "highlight": true,
+    "quelle": [
+      "https://www.introducingmarrakech.com/bahia-palace",
+      "https://www.moroccomuseum.com/en/guides-inspirations/palais-de-la-bahia-acces-horaires-tarifs"
+    ]
+  },
+  {
+    "id": "marrakesch-medersa-ben-youssef",
+    "art": "sehen",
+    "station": "marrakesch",
+    "name": "Medersa Ben Youssef",
+    "ort": [31.63159, -7.98604],
+    "ortSicher": "hoch",
+    "text": "Die alte Koranschule um einen großen Hof mit Wasserbecken: Stuck, Zedernholz und Fliesen, alles in ruhiger Symmetrie. Oben die winzigen Zellen der Studenten, von deren Fenstern man in den Hof schaut.",
+    "licht": "Direkt zur Öffnung um 9 Uhr: noch wenige Menschen, und das Becken spiegelt den Hof. Mittags liegt harter Kontrast auf dem Hof.",
+    "offen": "Täglich 9–19 Uhr (im Ramadan kürzer). Eintritt 50 MAD für ausländische Besucher; Tickets auch über die offizielle Seite.",
+    "aufwand": "Etwa 20 Minuten zu Fuß vom Riad nach Norden durch die Souks. Man verläuft sich leicht, die Offline-Karte hilft.",
+    "achtung": "Auf dem Weg durch die Souks sagen einem Jungen gern, der Weg sei 'geschlossen', und wollen einen führen. Das stimmt praktisch nie.",
+    "highlight": true,
+    "quelle": [
+      "https://www.medersabenyoussef.ma/en/horaires-et-tarifs/",
+      "https://www.medersabenyoussef.ma/en/faq/"
+    ]
+  },
+  {
+    "id": "marrakesch-jardin-majorelle",
+    "art": "foto",
+    "station": "marrakesch",
+    "name": "Jardin Majorelle und Musée Yves Saint Laurent",
+    "ort": [31.64168, -8.00336],
+    "ortSicher": "hoch",
+    "text": "Kakteen, Bambus und Seerosenbecken vor einem Blau, das es sonst nirgends gibt, dazu Gelb an Töpfen und Türrahmen. Nach so viel Rot in der Medina wirkt das fast kühl. Das YSL-Museum nebenan ist klar und schön gemacht.",
+    "licht": "Gleich um 8 Uhr: dann ist es leerer, und das Blau leuchtet im Seitenlicht, ohne auszubleichen. Ab dem späten Vormittag Schlangen und Mittagssonne.",
+    "offen": "Garten täglich 8–18:30 Uhr, letzter Einlass 18 Uhr. YSL-Museum 10–18 Uhr, mittwochs geschlossen. Garten 170 MAD, Berber-Museum +60 MAD, YSL-Museum 140 MAD (Stand 2026 laut Quellen). Tickets nur online über die offizielle Seite mit Zeitfenster, keine Kasse vor Ort.",
+    "aufwand": "Außerhalb der Medina, rund 3 km vom Riad. Petit Taxi etwa 10–15 Minuten; zu Fuß gut 40 Minuten.",
+    "achtung": "Tickets vorher online kaufen, sonst steht man umsonst an. Taxi: Taxameter oder Preis vorher vereinbaren.",
+    "highlight": true,
+    "quelle": [
+      "https://www.jardinmajorelle.com/en/",
+      "https://thirdeyetraveller.com/how-to-visit-jardin-majorelle-marrakech/"
+    ]
+  },
+  {
+    "id": "marrakesch-saadier-graeber",
+    "art": "sehen",
+    "station": "marrakesch",
+    "name": "Saadier-Gräber und Bab Agnaou",
+    "ort": [31.61727, -7.98870],
+    "ortSicher": "hoch",
+    "text": "Grabkammern aus dem 16. Jahrhundert, lange zugemauert, mit fein geschnitztem Stuck und Marmor. Man steht in einer kurzen Schlange und blickt durch einen Durchgang in den Saal der zwölf Säulen. Gleich um die Ecke das Tor Bab Agnaou, dessen Sandstein über die Jahrhunderte rötlich geworden ist.",
+    "licht": "Gräber: früh am Morgen, bevor sich die Schlange bildet. Bab Agnaou: spätes Nachmittagslicht, wenn der Stein warm-rot glüht.",
+    "offen": "Täglich etwa 9–16:45 Uhr, letzter Einlass 16:15 Uhr. Eintritt 70 MAD laut einer Quelle; Angaben schwanken.",
+    "aufwand": "Etwa 10 Minuten zu Fuß vom Riad nach Süden in die Kasbah. Die Anlage ist klein; oft Wartezeit am Saal der zwölf Säulen.",
+    "highlight": false,
+    "quelle": [
+      "https://www.saadiantombs.com/opening-hours",
+      "https://en.wikipedia.org/wiki/Bab_Agnaou"
+    ]
+  },
+  {
+    "id": "marrakesch-el-badi-palast",
+    "art": "sehen",
+    "station": "marrakesch",
+    "name": "El-Badi-Palast",
+    "ort": [31.61848, -7.98594],
+    "ortSicher": "hoch",
+    "text": "Eine riesige Ruine aus Lehm, rot-ocker gegen den Himmel, mit versunkenen Gärten und Orangenbäumen. Auf den Mauerkronen nisten Störche. Von den Wällen sieht man über die Dächer bis zum Atlas, wenn es klar ist.",
+    "licht": "Vormittag oder später Nachmittag, wenn die Lehmmauern Struktur bekommen. Zur Mittagszeit flach und grell.",
+    "offen": "Täglich etwa 9–17 Uhr. Eintritt 100 MAD laut einer Quelle, andere nennen 60 MAD; bitte vor Ort prüfen.",
+    "aufwand": "Etwa 5–8 Minuten zu Fuß vom Riad. Auf die Wälle führen Treppen.",
+    "achtung": "Kaum Schatten auf dem Gelände: Wasser und Kopfbedeckung mitnehmen.",
+    "highlight": false,
+    "quelle": [
+      "https://www.introducingmarrakech.com/el-badi-palace",
+      "https://www.naturallymorocco.co.uk/morocco-travel-blog/v/1236-holiday-attractions-in-morocco-saadian-tombs-and-el-badi-palace/"
+    ]
+  },
+  {
+    "id": "marrakesch-souks-faerbergasse",
+    "art": "foto",
+    "station": "marrakesch",
+    "name": "Souks und Färbergasse (Souk des Teinturiers)",
+    "ort": [31.63045, -7.98962],
+    "ortSicher": "mittel",
+    "text": "Die Souks nördlich des Platzes sind ein Geflecht aus Gassen, jede mit ihrem Handwerk: Lampen, Leder, Babouches, Holz. In der Färbergasse hängen Wollstränge in Safrangelb, Indigo, Pink und Türkis über den Köpfen.",
+    "licht": "Später Vormittag, wenn Sonnenstreifen durch die Schilfdächer fallen und die gefärbte Wolle von hinten leuchtet.",
+    "offen": "Die meisten Läden etwa ab 9–10 Uhr bis zum Abend; freitags mittags sind viele zu (ohne Gewähr).",
+    "aufwand": "Vom Riad 10–15 Minuten zu Fuß über den Jemaa el-Fna. Enge Gassen, Mopeds und Karren, man verläuft sich leicht.",
+    "achtung": "In der Färbergasse sind die Händler besonders aufdringlich, binden einem Tücher um oder verlangen Geld für Fotos. Man darf einfach fotografieren und freundlich weitergehen. Mopeds kommen von hinten, lieber an der Seite gehen.",
+    "highlight": false,
+    "quelle": [
+      "https://www.marrakech-riad.co.uk/2017/07/the-dyers-souk-of-marrakech/",
+      "https://www.tripadvisor.com/ShowUserReviews-g293734-d10124326-r759283646-Souk_des_Teinturiers-Marrakech_Marrakech_Safi.html"
+    ]
+  },
+  {
+    "id": "marrakesch-jardin-secret",
+    "art": "foto",
+    "station": "marrakesch",
+    "name": "Le Jardin Secret",
+    "ort": [31.63000, -7.98900],
+    "ortSicher": "mittel",
+    "text": "Hinter einem unscheinbaren Tor mitten in den Souks liegt ein restaurierter Riadgarten mit Wasserrinnen, grünen Kacheln und roten Mauern. Nach dem Gedränge draußen wird es plötzlich still.",
+    "licht": "Vormittag nach der Öffnung, wenn der Garten noch leer ist. Vom Turm aus später Nachmittag für warmes Licht auf den Dächern.",
+    "offen": "Täglich ab 9:30 Uhr; im Oktober bis 18:30 Uhr, ab November bis 18 Uhr. Tickets vor Ort oder online. Turm extra 40 MAD.",
+    "aufwand": "Etwa 12–15 Minuten zu Fuß vom Riad, in der Rue Mouassine. Der Turm ist eng und über schmale Stufen erreichbar.",
+    "achtung": "Die Turmterrasse ist sehr klein und hat eine hohe Brüstung, für Fotos nicht ideal.",
+    "highlight": false,
+    "quelle": [
+      "https://www.lejardinsecretmarrakech.com/en/faqs/",
+      "https://www.lejardinsecretmarrakech.com/en/"
+    ]
+  },
+  {
+    "id": "marrakesch-mellah",
+    "art": "sehen",
+    "station": "marrakesch",
+    "name": "Mellah mit Place des Ferblantiers und Lazama-Synagoge",
+    "ort": [31.62020, -7.98517],
+    "ortSicher": "mittel",
+    "text": "Das alte jüdische Viertel beginnt am Platz der Blechschmiede, wo Lampen und Laternen gehämmert werden. Weiter hinten in den Gassen liegt die Lazama-Synagoge mit blau-weißen Fliesen; im Mellah gibt es auch einen kleinen überdachten Gewürzmarkt.",
+    "licht": "Vormittag, wenn in den Werkstätten gearbeitet wird und die Laternen an der Fassade im Seitenlicht hängen.",
+    "offen": "Viertel immer zugänglich. Lazama-Synagoge täglich außer Samstag etwa 9–19 Uhr, freitags ab 8:30 Uhr; kleiner Eintritt oder Spende (Betrag unsicher).",
+    "aufwand": "Vom Riad nur wenige Minuten, direkt beim El-Badi-Palast. Der Eingang zur Synagoge ist versteckt und kaum beschildert.",
+    "achtung": "Kinder bieten an, einen gegen ein kleines Trinkgeld zur Synagoge zu bringen; das ist in Ordnung, aber Betrag vorher klären.",
+    "highlight": false,
+    "quelle": [
+      "https://www.albomadventures.com/synagogue-marrakech/",
+      "https://marocmama.com/mellah-of-marrakech/"
+    ]
+  },
+  {
+    "id": "marrakesch-naranj",
+    "art": "essen",
+    "station": "marrakesch",
+    "name": "Naranj",
+    "ort": [31.62260, -7.98640],
+    "ortSicher": "mittel",
+    "text": "Ein kleines libanesisches Familienrestaurant in der Rue Riad Zitoun Jdid mit bepflanzter Dachterrasse. Mezze, Hummus, Tabouleh, frisch und großzügig; auch viel Vegetarisches.",
+    "licht": "Zum Sonnenuntergang auf der Dachterrasse über den roten Dächern der Nachbarschaft.",
+    "offen": "Öffnungszeiten nicht verlässlich gefunden; kein Alkohol. Sehr beliebt, abends reservieren.",
+    "aufwand": "Nur wenige Minuten zu Fuß vom Riad, in derselben Straße Richtung Bahia.",
+    "highlight": false,
+    "quelle": [
+      "https://www.naranj.ma/",
+      "https://majourneys.com/en/marrakech/restaurants/naranj-marrakech"
+    ]
+  },
+  {
+    "id": "marrakesch-chez-lamine",
+    "art": "essen",
+    "station": "marrakesch",
+    "name": "Chez Lamine Hadj Mustapha",
+    "ort": [31.62700, -7.98830],
+    "ortSicher": "mittel",
+    "text": "Einfache Adresse in der Souk Ablouh am Rand des Platzes: Mechoui, Lamm aus dem Erdofen, wird nach Gewicht verkauft, mit Kreuzkümmel, Salz und Brot. Dazu Tanjia, das Topfgericht, das in der Asche des Hammam-Ofens gart.",
+    "offen": "Täglich, ohne Reservierung. Mechoui ab etwa Mittag, oft am Nachmittag ausverkauft; am besten zwischen 12 und 14 Uhr kommen.",
+    "aufwand": "Etwa 8–10 Minuten zu Fuß vom Riad, an der Nordostecke des Jemaa el-Fna.",
+    "highlight": false,
+    "quelle": [
+      "https://moroccantraveltrips.com/chez-lamine-hadj-mustapha/",
+      "https://www.xtremefoodies.com/africa/Marrakech/review/Chez-Lamine-Hadj-Mustapha/Beef-Tangia/7010_7169"
+    ]
+  },
+  {
+    "id": "marrakesch-garkuechen-jemaa",
+    "art": "essen",
+    "station": "marrakesch",
+    "name": "Garküchen auf dem Jemaa el-Fna",
+    "ort": [31.62600, -7.98880],
+    "ortSicher": "mittel",
+    "text": "Abends stehen nummerierte Stände mit langen Bänken auf dem Platz, unter Glühbirnen und Rauch. Harira, Brochettes, Schnecken in Brühe, gegrilltes Gemüse; man sitzt eng neben Fremden.",
+    "offen": "Etwa ab dem späten Nachmittag bis spät in die Nacht (ohne Gewähr).",
+    "aufwand": "Rund 5 Minuten zu Fuß vom Riad.",
+    "achtung": "Werber ziehen einen an ihren Stand. Einen Stand wählen, an dem auch Einheimische sitzen, Preise vorher fragen und prüfen, ob unbestellte Teller wie Brot oder Oliven auf der Rechnung landen.",
+    "highlight": false,
+    "quelle": [
+      "https://www.frommers.com/destinations/marrakech/nightlife/grand-balcon-du-caf-glacier/"
+    ]
+  },
+  {
+    "id": "marrakesch-nomad",
+    "art": "essen",
+    "station": "marrakesch",
+    "name": "Nomad",
+    "ort": [31.62948, -7.98680],
+    "ortSicher": "mittel",
+    "text": "Modern-marokkanische Küche in einem umgebauten Teppichladen am Gewürzplatz Rahba Kedima, mit zwei Dachterrassen. Der schönere Abend der Reise: Blick über die rot-ockerfarbenen Dächer bis zum Atlas.",
+    "licht": "Zum Sonnenuntergang von der oberen Terrasse, wenn Dächer und Minarette rot werden und bei klarer Sicht der Atlas auftaucht.",
+    "offen": "Mittags 12–15:30 Uhr, abends 19–23 Uhr. Für einen Terrassentisch zum Sonnenuntergang mehrere Tage vorher online reservieren.",
+    "aufwand": "Etwa 12–15 Minuten zu Fuß vom Riad durch die Souks; Treppen nach oben.",
+    "highlight": false,
+    "quelle": [
+      "https://nomadmarrakech.com/reservation/",
+      "https://www.therooftopguide.com/rooftop-bars-in-marrakech/nomad.html"
+    ]
+  }
+]

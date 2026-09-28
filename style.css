@@ -1,0 +1,498 @@
+/* Honig-App · Marokko 2026
+   Anthrazit und Knochenweiß wie die Teneriffa-App, Chefchaouen-Blau als Akzent,
+   Honig-Gold nur für Besuchtes. Knöpfe groß wie Verkehrsschilder. */
+
+/* Schriften liegen in der App selbst (kein Google-Server, Lizenz: SIL OFL, siehe fonts/) */
+@font-face { font-family: "Playfair Display"; src: url("fonts/playfair-display-latin-400-normal.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Playfair Display"; src: url("fonts/playfair-display-latin-500-normal.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: "Playfair Display"; src: url("fonts/playfair-display-latin-400-italic.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Playfair Display"; src: url("fonts/playfair-display-latin-500-italic.woff2") format("woff2"); font-weight: 500; font-style: italic; font-display: swap; }
+@font-face { font-family: "Geist"; src: url("fonts/geist-sans-latin-400-normal.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Geist"; src: url("fonts/geist-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: "Geist"; src: url("fonts/geist-sans-latin-600-normal.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: swap; }
+
+:root {
+  color-scheme: dark;
+  --grund: #14110f;
+  --flaeche: #1d1916;
+  --flaeche-hell: #27221e;
+  --linie: #3a332d;
+  --text: #efe9df;
+  --leise: #a89e91;
+  --blau: #5b8ad0;      /* wird je Station durch deren Farbe ersetzt */
+  --blau-tief: #2f5a98;
+  --honig: #e2ac3e;
+  --honig-text: #231806;
+  --warnung: #d9774a;
+
+  --serif: "Playfair Display", Georgia, "Times New Roman", serif;
+  --sans: "Geist", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  --leiste-hoehe: 76px;
+  --knopf-hoehe: 60px;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  background: var(--grund);
+  color: var(--text);
+  font: 17px/1.5 var(--sans);
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+[hidden] { display: none !important; }
+
+main {
+  min-height: 100%;
+  padding-bottom: calc(var(--leiste-hoehe) + env(safe-area-inset-bottom, 0px));
+}
+.screen {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 560px;
+  margin: 0 auto;
+  padding: calc(env(safe-area-inset-top, 0px) + 28px) 18px 32px;
+}
+.screen.voll {
+  max-width: none;
+  padding: 0;
+  gap: 0;
+  height: calc(100dvh - var(--leiste-hoehe) - env(safe-area-inset-bottom, 0px));
+}
+
+h1, h2, h3 {
+  font-family: var(--serif);
+  font-weight: 400;
+  margin: 0;
+  text-wrap: balance;
+  letter-spacing: -0.01em;
+}
+h1 { font-size: 44px; line-height: 1.05; }
+h2 { font-size: 27px; line-height: 1.15; }
+h3 { font-size: 21px; }
+p { margin: 0; }
+a { color: var(--blau); }
+
+.hero { display: flex; flex-direction: column; gap: 8px; padding-top: 8px; }
+.hero.klein h1 { font-size: 38px; }
+.eyebrow, .label {
+  font-size: 13px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--leise);
+}
+.sub { color: var(--leise); font-size: 17px; }
+.muted { color: var(--leise); }
+.klein-text { font-size: 14px; }
+
+.block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 18px;
+  background: var(--flaeche);
+  border: 1px solid var(--linie);
+}
+
+/* ---------- Knöpfe ---------- */
+.knopf {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 10px 18px;
+  border: 1px solid var(--blau);
+  background: var(--blau-tief);
+  color: #fff;
+  font: 600 17px/1.2 var(--sans);
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0;
+}
+.knopf.gross { min-height: var(--knopf-hoehe); font-size: 19px; width: 100%; }
+.knopf.leise { background: transparent; color: var(--text); border-color: var(--linie); }
+.knopf.honig { background: var(--honig); color: var(--honig-text); border-color: var(--honig); }
+.knopf.rund { width: 60px; height: 60px; min-height: 60px; padding: 0; font-size: 28px; border-radius: 50%; }
+.knopf:focus-visible, .leiste button:focus-visible, summary:focus-visible { outline: 3px solid var(--honig); outline-offset: 2px; }
+.knopf:active { transform: translateY(1px); }
+.knopfreihe { display: flex; flex-direction: column; gap: 10px; }
+
+/* ---------- Leiste unten ---------- */
+.leiste {
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  z-index: 1000;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  height: calc(var(--leiste-hoehe) + env(safe-area-inset-bottom, 0px));
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  background: #0f0d0c;
+  border-top: 1px solid var(--linie);
+}
+.leiste button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: 0;
+  background: none;
+  color: var(--leise);
+  font: 500 13px/1 var(--sans);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.leiste svg { width: 28px; height: 28px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.leiste button[aria-current="page"] { color: var(--honig); }
+
+/* ---------- Heute ---------- */
+.licht { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.licht li { display: flex; justify-content: space-between; gap: 12px; font-variant-numeric: tabular-nums; }
+.licht li.gold { color: var(--honig); }
+.licht li.vorbei { color: var(--leise); text-decoration: line-through; text-decoration-thickness: 1px; }
+.fennek { background: transparent; border-color: var(--honig); color: var(--honig); }
+.spruch { display: flex; flex-direction: column; gap: 14px; padding: 18px; border-left: 3px solid var(--honig); background: var(--flaeche-hell); }
+.spruch p { font: italic 22px/1.4 var(--serif); }
+
+#umschlag-hinweis { display: flex; flex-direction: column; gap: 12px; padding: 18px; background: var(--honig); color: var(--honig-text); }
+#umschlag-hinweis h2 { font-size: 24px; }
+
+/* ---------- Karte ---------- */
+.kartenkopf {
+  padding: calc(env(safe-area-inset-top, 0px) + 10px) 12px 10px;
+  background: var(--grund);
+  border-bottom: 1px solid var(--linie);
+}
+.staedte { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; }
+.staedte button {
+  flex: 0 0 auto;
+  min-height: 48px;
+  padding: 0 16px;
+  border: 1px solid var(--linie);
+  background: transparent;
+  color: var(--text);
+  font: 500 16px var(--sans);
+  cursor: pointer;
+}
+.staedte button[aria-pressed="true"] { background: var(--text); color: var(--grund); border-color: var(--text); }
+#map { flex: 1; min-height: 0; background: #0f0f0f; }
+.kartenknoepfe {
+  position: absolute;
+  right: 14px;
+  bottom: calc(var(--leiste-hoehe) + env(safe-area-inset-bottom, 0px) + 16px);
+  z-index: 800;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.kartenknoepfe .knopf:not(.rund) { min-height: 60px; font-size: 18px; }
+
+.leaflet-container { font-family: var(--sans); }
+.leaflet-tile-pane { filter: invert(1) hue-rotate(180deg) brightness(0.85) contrast(0.9); }
+.leaflet-control-attribution, .leaflet-control-zoom a {
+  background: rgba(20, 17, 15, 0.85) !important;
+  color: var(--leise) !important;
+  border-color: var(--linie) !important;
+}
+.leaflet-control-attribution a { color: var(--leise) !important; }
+.leaflet-control-zoom a { width: 44px !important; height: 44px !important; line-height: 44px !important; font-size: 22px !important; }
+
+.pin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 2px solid var(--grund);
+  background: var(--blau);
+  color: #fff;
+  font: 700 15px/1 var(--sans);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+.pin.hotel { background: var(--text); color: var(--grund); }
+.pin.parken { background: #5b5750; color: #fff; }
+.pin.eigen { background: #7a5ca8; }
+.pin.besucht { background: var(--honig); color: var(--honig-text); }
+.pin.umschlag::after {
+  content: "✉";
+  position: absolute;
+  transform: translate(14px, -14px);
+  font-size: 13px;
+  color: var(--honig);
+  text-shadow: 0 0 3px #000;
+}
+.ich { width: 20px; height: 20px; border-radius: 50%; background: var(--blau); border: 3px solid #fff; box-shadow: 0 0 0 6px rgba(79, 127, 196, 0.35); }
+
+/* ---------- Schreiben ---------- */
+.foto-waehlen { cursor: pointer; }
+#foto-vorschau { width: 100%; max-height: 50vh; object-fit: contain; background: #000; }
+textarea {
+  width: 100%;
+  min-height: 180px;
+  padding: 14px;
+  background: var(--flaeche);
+  color: var(--text);
+  border: 1px solid var(--linie);
+  border-radius: 0;
+  font: 19px/1.5 var(--sans);
+  resize: vertical;
+}
+textarea:focus { outline: 2px solid var(--blau); outline-offset: 0; }
+
+/* ---------- Logbuch ---------- */
+#eintraege { display: flex; flex-direction: column; gap: 14px; }
+.eintrag { display: flex; flex-direction: column; gap: 10px; padding: 16px; background: var(--flaeche); border: 1px solid var(--linie); }
+.eintrag .wann { font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--leise); }
+.eintrag .was { white-space: pre-wrap; font-size: 18px; }
+.eintrag.umschlag-eintrag { border-color: var(--honig); }
+.eintrag.umschlag-eintrag .was { font: italic 20px/1.45 var(--serif); }
+.eintrag .knopfreihe { flex-direction: row; flex-wrap: wrap; }
+.eintrag .knopfreihe .knopf { flex: 1 1 30%; min-width: 0; padding-left: 10px; padding-right: 10px; }
+.leer { padding: 28px 18px; text-align: center; color: var(--leise); border: 1px dashed var(--linie); }
+
+/* ---------- Mehr ---------- */
+details.block > summary {
+  cursor: pointer;
+  list-style: none;
+  font: 400 24px/1.2 var(--serif);
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+details.block > summary::-webkit-details-marker { display: none; }
+details.block > summary::after { content: "+"; font-family: var(--sans); color: var(--leise); }
+details.block[open] > summary::after { content: "–"; }
+#reise-form { display: flex; flex-direction: column; gap: 16px; }
+.station-daten { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.station-daten legend { grid-column: 1 / -1; font: 400 20px var(--serif); padding: 0; margin-bottom: 4px; }
+.station-daten fieldset { border: 0; margin: 0; padding: 0; display: contents; }
+.station-daten label { display: flex; flex-direction: column; gap: 4px; font-size: 13px; color: var(--leise); }
+input[type="date"], input[type="text"] {
+  min-height: 52px;
+  padding: 8px 12px;
+  background: var(--grund);
+  color: var(--text);
+  border: 1px solid var(--linie);
+  border-radius: 0;
+  font: 18px var(--sans);
+  width: 100%;
+}
+.infotext { display: flex; flex-direction: column; gap: 10px; }
+.infotext ul { margin: 0; padding-left: 20px; display: grid; gap: 6px; }
+.saetze { display: grid; gap: 10px; }
+.satz { display: grid; grid-template-columns: 1fr auto; gap: 2px 12px; padding-bottom: 10px; border-bottom: 1px solid var(--linie); }
+.satz b { font: 500 21px var(--serif); }
+.satz span { color: var(--leise); grid-column: 1; }
+
+/* ---------- Blatt (Details zu einem Ort) ---------- */
+.blatt {
+  position: fixed;
+  inset: 0;
+  z-index: 1500;
+  display: flex;
+  align-items: flex-end;
+  background: rgba(0, 0, 0, 0.55);
+}
+.blatt-innen {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  max-height: 86dvh;
+  margin: 0 auto;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 26px 18px calc(22px + env(safe-area-inset-bottom, 0px));
+  background: var(--grund);
+  border-top: 2px solid var(--honig);
+}
+.blatt-zu {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 52px;
+  height: 52px;
+  border: 1px solid var(--linie);
+  background: var(--flaeche);
+  color: var(--text);
+  font-size: 22px;
+  cursor: pointer;
+}
+.blatt h2 { padding-right: 60px; }
+.pruefliste { display: grid; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.pruefliste li { padding: 10px 12px; background: var(--flaeche); border-left: 3px solid var(--blau); }
+.pruefliste li.achtung { border-left-color: var(--warnung); }
+.pruefliste b { display: block; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--leise); font-weight: 500; }
+.brief { font: italic 23px/1.45 var(--serif); padding: 8px 0; }
+
+/* ---------- Meldung ---------- */
+.meldung {
+  position: fixed;
+  left: 14px;
+  right: 14px;
+  top: calc(env(safe-area-inset-top, 0px) + 72px);
+  z-index: 1400;
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 16px 18px;
+  background: var(--text);
+  color: var(--grund);
+  font-size: 17px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}
+
+/* ---------- Reise der Farben ---------- */
+.farbreise { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px; }
+.farbreise div { display: flex; flex-direction: column; gap: 6px; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--leise); }
+.farbreise span { display: block; height: 8px; opacity: 0.45; }
+.farbreise .jetzt { color: var(--text); }
+.farbreise .jetzt span { opacity: 1; height: 12px; }
+.pin.strecke { background: #6f9a57; }
+.pin.highlight { box-shadow: 0 0 0 3px rgba(226, 172, 62, 0.55), 0 2px 6px rgba(0, 0, 0, 0.6); }
+.pruefliste li.licht-hinweis { border-left-color: var(--honig); }
+
+/* ---------- Tagebuch ---------- */
+.eintrag-bild { width: 100%; max-height: 60vh; object-fit: cover; background: #000; }
+
+/* ---------- Post ---------- */
+.mitte { text-align: center; }
+.post-titel { font-size: 28px; }
+.post-text { white-space: pre-wrap; font: 20px/1.55 var(--serif); }
+.post-text.vers { font-style: italic; }
+.post-von { font: italic 18px var(--serif); color: var(--honig); text-align: right; }
+.post-bild { width: 100%; }
+
+.umschlag-bild {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  max-height: 44vh;
+  border: 0;
+  background: #e9dfcd;
+  cursor: pointer;
+  overflow: hidden;
+}
+.umschlag-bild .klappe {
+  position: absolute;
+  inset: 0 0 45% 0;
+  background: #d8cbb2;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  transform-origin: top;
+  transition: transform 0.45s ease;
+}
+.umschlag-bild .siegel {
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  width: 64px;
+  height: 64px;
+  margin: -32px 0 0 -32px;
+  border-radius: 50%;
+  background: var(--blau-tief);
+  color: var(--honig);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.35);
+}
+.umschlag-bild.offen .klappe { transform: rotateX(180deg); }
+.umschlag-bild.offen .siegel { opacity: 0; transition: opacity 0.2s; }
+.brief-papier { display: flex; flex-direction: column; gap: 14px; padding: 22px 20px; background: #f3ecdf; color: #2a2119; }
+.brief-papier .post-von { color: #7a5a1c; }
+
+.postkarte {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  border: 0;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+  perspective: 1200px;
+}
+.postkarte .vorne, .postkarte .hinten {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  backface-visibility: hidden;
+  transition: transform 0.6s ease;
+  text-align: left;
+}
+.postkarte .vorne { background: linear-gradient(135deg, var(--blau), var(--blau-tief)); color: #fff; }
+.postkarte .vorne .gruss { font: italic 34px var(--serif); }
+.postkarte .vorne .marke { align-self: flex-end; padding: 6px 8px; border: 2px dashed rgba(255, 255, 255, 0.7); font: 600 13px var(--sans); letter-spacing: 0.2em; }
+.postkarte .hinten { background: #f3ecdf; color: #2a2119; transform: rotateY(180deg); overflow-y: auto; }
+.postkarte .hinten .post-text { font-size: 18px; }
+.postkarte.umgedreht .vorne { transform: rotateY(-180deg); }
+.postkarte.umgedreht .hinten { transform: rotateY(0); }
+
+.zettel {
+  align-self: center;
+  width: 70%;
+  padding: 26px 18px;
+  border: 0;
+  background: #f1e6c4;
+  color: #4a3b1c;
+  font: italic 20px var(--serif);
+  transform: rotate(-3deg);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+.zettel-offen { display: flex; flex-direction: column; gap: 12px; padding: 20px; background: #f1e6c4; color: #3a2e16; }
+.zettel-offen .post-von { color: #7a5a1c; }
+.aufloesung { padding: 14px; border-left: 3px solid var(--honig); background: var(--flaeche); }
+
+@media (prefers-reduced-motion: reduce) {
+  .postkarte .vorne, .postkarte .hinten, .umschlag-bild .klappe { transition: none; }
+}
+
+/* ---------- Nyota, Auto, Wetter, Farben, Taxi, Rechner ---------- */
+textarea.paket { min-height: 160px; font: 15px/1.45 var(--sans); color: var(--leise); }
+#notiz { min-height: 96px; }
+.wetter-jetzt { font: 400 30px var(--serif); }
+.farbstreifen { display: flex; flex-wrap: wrap; gap: 4px; }
+.farbstreifen span { width: 26px; height: 26px; display: block; }
+.taxi-adresse { font: 500 34px/1.25 var(--serif); white-space: pre-line; padding: 18px 0; }
+.taxi-gruss { font-size: 22px; }
+.rechner { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.rechner label { display: flex; flex-direction: column; gap: 4px; font-size: 13px; color: var(--leise); }
+.rechner .breit { grid-column: 1 / -1; }
+.rechner input { min-height: 56px; padding: 8px 12px; background: var(--grund); color: var(--text); border: 1px solid var(--linie); font: 22px var(--sans); width: 100%; }
+.preise { display: grid; gap: 10px; }
+.pin.auto { background: #e8e2d6; color: #14110f; }
+.eintrag.tag-eintrag { border-color: var(--blau); }
+.eintrag.tag-eintrag .was { font: 19px/1.55 var(--serif); }
+body.demo .hero::before { content: "Demo"; align-self: flex-start; padding: 3px 10px; background: var(--honig); color: var(--honig-text); font: 600 12px var(--sans); letter-spacing: 0.12em; text-transform: uppercase; }
+
+/* Taxi-Karte: ganzer Bildschirm, hell, gut lesbar fürs Gegenüber */
+.blatt.taxi { align-items: stretch; }
+.blatt.taxi .blatt-innen {
+  max-height: none;
+  height: 100dvh;
+  justify-content: center;
+  background: #f6efe3;
+  color: #1b1512;
+  border-top: 0;
+}
+.blatt.taxi .label, .blatt.taxi .muted { color: #5a4d42; }
+.blatt.taxi .taxi-adresse { color: #1b1512; }
+.blatt.taxi .blatt-zu { color: #1b1512; border-color: #1b1512; background: transparent; }

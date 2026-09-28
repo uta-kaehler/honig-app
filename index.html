@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#14110f">
+<title>Honig-App</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="lib/leaflet.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main>
+  <!-- HEUTE -->
+  <section class="screen" id="heute" aria-labelledby="heute-titel">
+    <div class="hero">
+      <p class="eyebrow" id="heute-tag"></p>
+      <h1 id="heute-titel">Marokko</h1>
+      <p class="sub" id="heute-sub"></p>
+    </div>
+
+    <div class="farbreise" id="farbreise" aria-label="Die Reise der Farben"></div>
+
+    <div id="umschlag-hinweis" hidden></div>
+
+    <div class="block" id="wetter" hidden></div>
+
+    <div class="block" id="heute-hotel" hidden>
+      <p class="label">Heute schlaft ihr hier</p>
+      <h2 id="hotel-name"></h2>
+      <p class="muted" id="hotel-ort"></p>
+      <div class="knopfreihe">
+        <a class="knopf gross" id="hotel-route-parken" target="_blank" rel="noopener">Route zum Parkplatz</a>
+        <a class="knopf gross leise" id="hotel-route" target="_blank" rel="noopener">Route zum Hotel</a>
+      </div>
+    </div>
+
+    <div class="block" id="nyota">
+      <label class="label" for="notiz" id="nyota-titel">Nyota · kurz reinsprechen</label>
+      <textarea id="notiz" rows="3" placeholder="Mikrofon auf der Tastatur antippen und einfach erzählen …"></textarea>
+      <button class="knopf gross" id="notiz-merken" type="button">Merken</button>
+      <p class="muted klein-text" id="nyota-stand"></p>
+      <button class="knopf gross leise" id="tag-einpacken" type="button">Tag einpacken</button>
+    </div>
+
+    <div class="block" id="auto-block">
+      <p class="label">Mietwagen</p>
+      <p id="auto-stand"></p>
+      <div class="knopfreihe">
+        <button class="knopf gross" id="auto-parken" type="button">Unser Auto steht hier</button>
+        <a class="knopf gross leise" id="auto-route" target="_blank" rel="noopener" hidden>Zurück zum Auto</a>
+        <button class="knopf leise" id="auto-weg" type="button" hidden>Auto abgeholt</button>
+      </div>
+    </div>
+
+    <div class="block" id="eigene-farben" hidden></div>
+
+    <div class="block">
+      <p class="label">Licht heute · <span id="licht-ort"></span></p>
+      <ul class="licht" id="licht"></ul>
+    </div>
+
+    <div class="block">
+      <button class="knopf gross fennek" id="fennek-knopf" type="button">
+        <span aria-hidden="true">🦊</span> Fennek, sag was
+      </button>
+      <div class="spruch" id="spruch" hidden>
+        <p id="spruch-text"></p>
+        <button class="knopf leise" id="spruch-zu" type="button">Danke, Fennek</button>
+      </div>
+    </div>
+
+    <div class="block" id="reise-fehlt" hidden>
+      <p class="label">Reisedaten fehlen</p>
+      <p>Die App weiß noch nicht, wann ihr wo seid. Trag die Daten einmal unter <b>Mehr</b> ein.</p>
+      <button class="knopf gross" type="button" data-gehe="mehr">Zu den Reisedaten</button>
+    </div>
+  </section>
+
+  <!-- KARTE -->
+  <section class="screen voll" id="karte" aria-label="Karte" hidden>
+    <div class="kartenkopf">
+      <div class="staedte" id="staedte"></div>
+    </div>
+    <div id="map"></div>
+    <div class="kartenknoepfe">
+      <button class="knopf rund" id="wo-bin-ich" type="button" aria-label="Wo bin ich?">◎</button>
+      <button class="knopf" id="hier-merken" type="button">Hier merken</button>
+    </div>
+  </section>
+
+  <!-- SCHREIBEN -->
+  <section class="screen" id="schreiben" aria-labelledby="schreiben-titel" hidden>
+    <div class="hero klein">
+      <h1 id="schreiben-titel">Schreiben</h1>
+      <p class="sub">Foto wählen, in Ruhe draufsprechen, teilen. Text und eine kleine Kopie des Fotos kommen ins Tagebuch.</p>
+    </div>
+    <label class="knopf gross foto-waehlen" for="foto">Foto wählen</label>
+    <input type="file" id="foto" accept="image/*" hidden>
+    <img id="foto-vorschau" alt="Gewähltes Foto" hidden>
+    <label class="label" for="text">Dein Text</label>
+    <textarea id="text" rows="7" placeholder="Hier einfach draufsprechen …"></textarea>
+    <p class="muted klein-text" id="schreiben-ort"></p>
+    <div class="knopfreihe">
+      <button class="knopf gross" id="teilen" type="button">Teilen (WhatsApp)</button>
+      <button class="knopf gross leise" id="nur-logbuch" type="button">Nur ins Logbuch</button>
+    </div>
+  </section>
+
+  <!-- LOGBUCH -->
+  <section class="screen" id="logbuch" aria-labelledby="logbuch-titel" hidden>
+    <div class="hero klein">
+      <h1 id="logbuch-titel">Tagebuch</h1>
+      <p class="sub" id="logbuch-sub"></p>
+    </div>
+    <div id="eintraege"></div>
+    <button class="knopf gross honig" id="tagebuch-speichern" type="button">Reisetagebuch speichern</button>
+    <button class="knopf gross leise" id="alles-teilen" type="button">Alle Texte teilen</button>
+  </section>
+
+  <!-- MEHR -->
+  <section class="screen" id="mehr" aria-labelledby="mehr-titel" hidden>
+    <div class="hero klein">
+      <h1 id="mehr-titel">Mehr</h1>
+    </div>
+    <details class="block" id="reisedaten" open>
+      <summary>Reisedaten</summary>
+      <p class="muted">Bleiben nur auf diesem Handy.</p>
+      <form id="reise-form"></form>
+    </details>
+    <div id="mehr-inhalt"></div>
+  </section>
+</main>
+
+<nav class="leiste" aria-label="Bereiche">
+  <button type="button" data-gehe="heute"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M5 19l2-2M17 7l2-2"/></svg>Heute</button>
+  <button type="button" data-gehe="karte"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2zM9 4v14M15 6v14"/></svg>Karte</button>
+  <button type="button" data-gehe="schreiben"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4zM13 7l4 4"/></svg>Schreiben</button>
+  <button type="button" data-gehe="logbuch"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2V5zM19 19v2H6"/></svg>Tagebuch</button>
+  <button type="button" data-gehe="mehr"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Mehr</button>
+</nav>
+
+<div class="blatt" id="blatt" hidden>
+  <div class="blatt-innen" role="dialog" aria-modal="true" aria-labelledby="blatt-titel">
+    <button class="blatt-zu" id="blatt-zu" type="button" aria-label="Schließen">✕</button>
+    <div id="blatt-inhalt"></div>
+  </div>
+</div>
+
+<div class="meldung" id="meldung" hidden></div>
+
+<script src="lib/leaflet.js"></script>
+<script src="lib/suncalc.js"></script>
+<script src="daten.js"></script>
+<script src="orte.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
