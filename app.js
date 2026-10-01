@@ -87,7 +87,7 @@ function alleOrte() {
     orte.push({ id: "hotel-" + s.id, art: "hotel", name: h.name, ort: h.ort, station: s.id,
       text: h.lage + ".", offen: h.anreise, aufwand: h.aufwand, achtung: h.achtung,
       radius: h.genau ? 80 : 0 }); // ungenaue Punkte nie automatisch golden machen
-    s.parken.forEach((p, i) => orte.push({ id: `parken-${s.id}-${i}`, art: "parken", station: s.id, radius: 0, ...p }));
+    s.parken.forEach((p, i) => p.ort && orte.push({ id: `parken-${s.id}-${i}`, art: "parken", station: s.id, radius: 0, ...p }));
   }
   for (const o of ORTE) {
     const radius = o.info ? 0 : o.ortSicher === "hoch" ? 120 : o.ortSicher === "mittel" ? 80 : 0;
@@ -121,6 +121,12 @@ function station(id) {
 
 function routeLink([lat, lon], zuFuss = false) {
   return `https://www.google.com/maps/dir/?api=1&destination=${lat},${lon}&travelmode=${zuFuss ? "walking" : "driving"}`;
+}
+
+// Parkplätze ohne genauen Punkt werden in Google Maps über ihren Namen gesucht.
+function parkLink(p) {
+  if (!p.ort) return `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(p.suche || p.name)}&travelmode=driving`;
+  return routeLink(p.ort);
 }
 
 function entfernung([lat1, lon1], [lat2, lon2]) {
@@ -233,7 +239,7 @@ function ortZeigen(ort) {
     target: "_blank", rel: "noopener" }, "Route in Google Maps"));
 
   if (ort.art === "hotel" && s && s.parken.length) {
-    inhalt.push(el("a", { class: "knopf gross leise", href: routeLink(s.parken[0].ort), target: "_blank", rel: "noopener" },
+    inhalt.push(el("a", { class: "knopf gross leise", href: parkLink(s.parken[0]), target: "_blank", rel: "noopener" },
       "Route zum Parkplatz"));
   }
 
@@ -484,7 +490,7 @@ function heuteZeigen() {
     const p = document.getElementById("hotel-route-parken");
     if (s.parken.length) {
       p.hidden = false;
-      p.href = routeLink(s.parken[0].ort);
+      p.href = parkLink(s.parken[0]);
     } else p.hidden = true;
   } else {
     hotelBlock.hidden = true;

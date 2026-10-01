@@ -81,7 +81,7 @@ const STATIONEN = [
       {
         name: "Parkplatz Ras El Ma",
         ort: [35.17104, -5.25642],
-        text: "Neuer Parkplatz an der Quelle Ras El Ma, mit Kameras, am nächsten zum Haus.",
+        text: "Neuer Parkplatz an der Quelle Ras El Ma, mit Kameras.",
         aufwand: "Etwa 3–5 Minuten bis zum Tor Bab El Onsar.",
         offen: "Um 20 DH.",
         achtung: "War nach den Unwettern Anfang 2026 zeitweise gesperrt. Vorher beim Gastgeber nachfragen."
@@ -114,8 +114,8 @@ const STATIONEN = [
       {
         name: "Parkplatz Bab El Marsa",
         ort: [35.78531, -5.80884],
-        text: "Großer bewachter Parkplatz an der Rue du Portugal, von der Stadt betrieben.",
-        aufwand: "Etwa 5–8 Minuten bergauf bis zum Riad.",
+        text: "Großer bewachter Parkplatz an der Rue du Portugal, von der Stadt betrieben. Am Eingang beim Wächter nach der Tagespauschale fragen („forfait journalier“) und möglichst hinten parken, nahe dem Ausgang zur Medina.",
+        aufwand: "Etwa 7–9 Minuten bergauf bis zum Riad.",
         offen: "Etwa 40 DH pro Nacht.",
         achtung: "Das offizielle Ticket im Büro nehmen. Es gibt Berichte von falschen Kassierern."
       }

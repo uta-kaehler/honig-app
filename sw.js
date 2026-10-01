@@ -1,5 +1,5 @@
 // Offline-Vorrat: die App selbst und alle Kartenkacheln, die man schon einmal gesehen hat.
-const VERSION = "honig-9";
+const VERSION = "honig-10";
 const APP = ["./", "index.html", "style.css", "app.js", "daten.js", "orte.js", "manifest.webmanifest",
   "icons/icon-192.png", "icons/icon-512.png", "lib/leaflet.js", "lib/leaflet.css", "lib/suncalc.js",
   "fonts/geist-sans-latin-400-normal.woff2", "fonts/geist-sans-latin-500-normal.woff2", "fonts/geist-sans-latin-600-normal.woff2", "fonts/playfair-display-latin-400-italic.woff2", "fonts/playfair-display-latin-400-normal.woff2", "fonts/playfair-display-latin-500-italic.woff2", "fonts/playfair-display-latin-500-normal.woff2"];
